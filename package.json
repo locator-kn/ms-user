@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "documentation": "documentation index.js -o docs/doc.md -f md -g"
+    "documentation": "documentation index.js -o docs/ -f html -g"
   },
   "author": "",
   "license": "ISC",
