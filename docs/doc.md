@@ -1,3 +1,9 @@
+# connect
+
+connects to the database
+
+Returns **Promise or Any** 
+
 # doSomething
 
 This function does something, sometimes
@@ -17,3 +23,13 @@ This function does something else
 
 -   `message`  some data
 -   `next`  callback
+
+# getAllUsers
+
+gets all users from the database
+
+**Parameters**
+
+-   `message`  some param
+
+Returns **Any** 
