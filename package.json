@@ -9,7 +9,7 @@
     "gendocs": "./generate_docs.sh"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^1.2.0",
     "mongodb": "^2.0.49",
