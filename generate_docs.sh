@@ -5,6 +5,7 @@ if [ $current_branch != 'master' ];
 then
     return
 fi
+rm -rf docs/*
 npm run documentation
 git checkout gh-pages
 git add .
