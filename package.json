@@ -1,0 +1,21 @@
+{
+  "name": "ms-sample",
+  "version": "1.0.0",
+  "description": "microservice sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "mongodb": "^2.0.49",
+    "seneca": "^0.8.0",
+    "seneca-rabbitmq-transport": "^0.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.7.0",
+    "proxyquire": "^1.7.3"
+  }
+}
