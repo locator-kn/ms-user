@@ -11,7 +11,7 @@ npm run documentation
 
 git checkout gh-pages
 
-mv docs/* ./
+rsync -a docs/* ./
 
 git add .
 git commit -m 'generate documentation'
