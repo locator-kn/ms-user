@@ -7,7 +7,8 @@ then
 fi
 rm -rf docs/*
 npm run documentation
-return
+
+
 git checkout gh-pages
 git add .
 git commit -m 'generate documentation'
