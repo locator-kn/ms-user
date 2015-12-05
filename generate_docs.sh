@@ -10,6 +10,9 @@ npm run documentation
 
 
 git checkout gh-pages
+
+mv docs/* ./
+
 git add .
 git commit -m 'generate documentation'
 git push origin gh-pages
