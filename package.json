@@ -4,7 +4,8 @@
   "description": "microservice sample",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "documentation": "documentation index.js -o docs/doc.md -f md"
   },
   "author": "",
   "license": "ISC",
