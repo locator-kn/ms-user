@@ -1,6 +1,6 @@
 # connect
 
-[lib/database.js:24-26](https://github.com/locator-kn/ms-sample/blob/694b5ff9d9e6504938f8d19ba74f9dde5d3cd6ce/lib/database.js#L24-L26 "Source code on GitHub")
+[lib/database.js:24-26](https://github.com/locator-kn/ms-sample/blob/60b464003b0283a0169b8888d295cf5997be48b5/lib/database.js#L24-L26 "Source code on GitHub")
 
 connects to the database
 
@@ -8,7 +8,7 @@ Returns **Promise or Any**
 
 # doSomething
 
-[lib/module.js:22-31](https://github.com/locator-kn/ms-sample/blob/694b5ff9d9e6504938f8d19ba74f9dde5d3cd6ce/lib/module.js#L22-L31 "Source code on GitHub")
+[lib/module.js:22-31](https://github.com/locator-kn/ms-sample/blob/60b464003b0283a0169b8888d295cf5997be48b5/lib/module.js#L22-L31 "Source code on GitHub")
 
 This function does something, sometimes
 
@@ -21,7 +21,7 @@ Returns **Promise&lt;T&gt;**
 
 # doSomethingElse
 
-[lib/module.js:38-45](https://github.com/locator-kn/ms-sample/blob/694b5ff9d9e6504938f8d19ba74f9dde5d3cd6ce/lib/module.js#L38-L45 "Source code on GitHub")
+[lib/module.js:38-45](https://github.com/locator-kn/ms-sample/blob/60b464003b0283a0169b8888d295cf5997be48b5/lib/module.js#L38-L45 "Source code on GitHub")
 
 This function does something else
 
@@ -32,7 +32,7 @@ This function does something else
 
 # getAllUsers
 
-[lib/database.js:13-18](https://github.com/locator-kn/ms-sample/blob/694b5ff9d9e6504938f8d19ba74f9dde5d3cd6ce/lib/database.js#L13-L18 "Source code on GitHub")
+[lib/database.js:13-18](https://github.com/locator-kn/ms-sample/blob/60b464003b0283a0169b8888d295cf5997be48b5/lib/database.js#L13-L18 "Source code on GitHub")
 
 gets all users from the database
 
