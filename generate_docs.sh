@@ -1,6 +1,6 @@
 #!/bin/sh
 
-current_branch= git rev-parse --abbrev-ref HEAD
+current_branch=$(git rev-parse --abbrev-ref HEAD)
 if [ $current_branch != 'master' ];
 then
     return
