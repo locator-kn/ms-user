@@ -1,7 +1,7 @@
 {
-  "name": "ms-sample",
+  "name": "ms-user",
   "version": "1.0.0",
-  "description": "microservice sample",
+  "description": "microservice user",
   "main": "index.js",
   "scripts": {
     "test": "ava",
