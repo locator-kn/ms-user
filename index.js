@@ -17,5 +17,6 @@ database.connect()
             .use(transportMethod + '-transport')
             .add(patternPin + ',cmd:login', user.login)
             .add(patternPin + ',cmd:logout', user.logout)
+            .add(patternPin + ',cmd:register', user.register)
             .listen({type: transportMethod, pin: patternPin});
     });
