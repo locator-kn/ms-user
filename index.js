@@ -15,7 +15,7 @@ database.connect()
     .then(() => {
         seneca
             .use(transportMethod + '-transport')
-            .add(patternPin + ',cmd:login', mymodule.doSomething)
-            .add(patternPin + ',cmd:else', mymodule.doSomethingElse)
+            .add(patternPin + ',cmd:login', user.login)
+            .add(patternPin + ',cmd:logout', user.logout)
             .listen({type: transportMethod, pin: patternPin});
     });
