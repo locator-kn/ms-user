@@ -2,12 +2,12 @@
 
 const fns = {};
 
-fns.getAllUsers = (message) => {
-    if (message.cmd !== 'test') {
-        return Promise.reject({message: 'cmd was not test', code: 4000});
-    }
-    return Promise.resolve({doc: 'asd', processId: process.pid});
+fns.getUser = mail => {
+    //return database.collection('users').findOne({"mail": mail});
 };
 
+fns.createUser = user => {
+    //return database.collection('users').insertOne(user);
+};
 
 module.exports = fns;
