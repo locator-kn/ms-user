@@ -13,7 +13,7 @@
   "dependencies": {
     "bcrypt": "^0.8.5",
     "dotenv": "^1.2.0",
-    "mongodb": "^2.0.49",
+    "mongodb": "^2.1.1",
     "seneca": "^0.8.0",
     "seneca-rabbitmq-transport": "^0.2.1"
   },
