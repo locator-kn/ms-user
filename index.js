@@ -20,6 +20,17 @@ database.connect()
             //.use(transportMethod + '-transport')
             .add(patternPin + ',cmd:login', user.login)
             .add(patternPin + ',cmd:register', user.register)
+            .add(patternPin + ',cmd:follow', user.follow)
+            //.act({
+            //    role: 'user',
+            //    cmd: 'follow',
+            //    data: {
+            //        user_id: '567857f5de1d4c5a4fd81d01',
+            //        to_follow: '567857f5de1d4c5a4fd81d03'
+            //    }
+            //}, (err, data) => {
+            //    console.log('follow resp:', err || data);
+            //})
             //.listen({type: transportMethod, pin: patternPin});
             .listen({type: 'tcp', port: 7002, pin: patternPin});
     });
