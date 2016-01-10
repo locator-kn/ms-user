@@ -22,6 +22,7 @@ database.connect()
             .add(patternPin + ',cmd:register', user.register)
             .add(patternPin + ',cmd:follow', user.follow)
             .add(patternPin + ',cmd:getfollowers', user.getFollowers)
+            .add(patternPin + ',cmd:getfollowing', user.getFollowing)
             //.act({
             //    role: 'user',
             //    cmd: 'follow',
