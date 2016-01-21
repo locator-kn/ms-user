@@ -13,6 +13,7 @@ fns.getUser = mail => {
 };
 
 fns.createUser = user => {
+    Promise.resolve(user);
     //return database.collection('users').insertOne(user);
 };
 

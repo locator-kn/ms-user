@@ -8,20 +8,15 @@ const user = proxyquire('../lib/user', { './database': databaseStub });
 
 test('user.login', t => {
     user.login(userFixtures.userLoginPass, (err, data) => {
-        if(err) {
-            return t.fail();
-        }
-        console.log(data);
-        t.pass();
+        t.not(void 0, data);
+        t.is(null, err);
     });
 });
 
 test('user.register', t => {
     user.register(userFixtures.userRegisterPass, (err, data) => {
-
-        if(err) {
-            return t.pass(err.message);
-        }
-        return t.fail('should return error');
+        t.not(null, err);
+        t.is('ValidationError', err);
+        t.is(void 0, data);
     });
 });
