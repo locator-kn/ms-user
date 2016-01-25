@@ -24,9 +24,9 @@ database.connect()
             .client({type: 'tcp', port: 7010, host: 'localhost', pin: 'role:reporter'})
 
             .add(patternPin + ',cmd:register,entity:device', user.registerDevice)
+            .add(patternPin + ',cmd:register,entity:user', user.register)
 
             .add(patternPin + ',cmd:login', user.login)
-            .add(patternPin + ',cmd:register', user.register)
             .add(patternPin + ',cmd:follow', user.follow)
             .add(patternPin + ',cmd:getfollowers', user.getFollowers)
             .add(patternPin + ',cmd:getfollowing', user.getFollowing)
