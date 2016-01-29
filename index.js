@@ -24,6 +24,7 @@ database.connect()
             .client({type: 'tcp', port: 7010, host: 'localhost', pin: 'role:reporter'})
 
             .add(patternPin + ',cmd:register,entity:device', user.registerDevice)
+            .add(patternPin + ',cmd:unregister,entity:device', user.unregisterDevice)
             .add(patternPin + ',cmd:register,entity:user', user.register)
 
             .add(patternPin + ',cmd:login', user.login)
