@@ -19,7 +19,7 @@ const patternPin = 'role:user';
 database.connect()
     .then(() => {
         seneca
-            //.use(transportMethod + '-transport')
+        //.use(transportMethod + '-transport')
 
             .client({type: 'tcp', port: 7010, host: 'localhost', pin: 'role:reporter'})
 

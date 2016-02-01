@@ -16,7 +16,7 @@
     "dotenv": "^1.2.0",
     "joi": "^7.1.0",
     "mongodb": "^2.1.1",
-    "ms-utilities": "^2.1.2",
+    "ms-utilities": "^2.3.3",
     "seneca": "^0.9.3",
     "seneca-rabbitmq-transport": "^0.2.1"
   },
@@ -25,8 +25,5 @@
     "jshint": "^2.9.1",
     "precommit-hook": "^3.0.0",
     "proxyquire": "^1.7.3"
-  },
-  "pre-commit": [
-    "jshint"
-  ]
+  }
 }
