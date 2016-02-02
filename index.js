@@ -8,6 +8,7 @@ require('dotenv').config({path: pwd});
 const util = require('ms-utilities');
 const seneca = require('seneca')();
 const user = require('./lib/user');
+const device = require('./lib/device');
 const database = require('./lib/database');
 
 
