@@ -27,7 +27,7 @@ database.connect()
             .add(patternPin + ',cmd:register,entity:device', device.registerDevice)
             .add(patternPin + ',cmd:unregister,entity:device', device.unregisterDevice)
             .add(patternPin + ',cmd:register,entity:user', user.register)
-
+            .add(patternPin + ',cmd:changePwd', user.changePassword)
             .add(patternPin + ',cmd:login', user.login)
             .add(patternPin + ',cmd:follow', user.follow)
             .add(patternPin + ',cmd:getfollowers', user.getFollowers)
