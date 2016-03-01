@@ -38,10 +38,11 @@ database.connect()
             .add(patternPin + ',cmd:fbLogin', user.fbLogin)
             //.act({
             //    role: 'user',
-            //    cmd: 'follow',
+            //    cmd: 'fbLogin',
             //    data: {
-            //        user_id: '567857f5de1d4c5a4fd81d01',
-            //        to_follow: '567857f5de1d4c5a4fd81d03'
+            //        id: '1420825108994320',
+            //        email: 'some@email.com',
+            //        name: 'some name'
             //    }
             //}, (err, data) => {
             //    console.log('follow resp:', err || data);
