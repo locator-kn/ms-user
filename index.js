@@ -27,6 +27,9 @@ database.connect()
             .add(patternPin + ',cmd:register,entity:device', device.registerDevice)
             .add(patternPin + ',cmd:unregister,entity:device', device.unregisterDevice)
             .add(patternPin + ',cmd:register,entity:user', user.register)
+
+            .add(patternPin + ',cmd:add,entity:image', user.addImageToUser)
+
             .add(patternPin + ',cmd:changePwd', user.changePassword)
             .add(patternPin + ',cmd:forgetPassword', user.forgetPassword)
             .add(patternPin + ',cmd:login', user.login)
