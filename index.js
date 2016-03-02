@@ -35,7 +35,7 @@ database.connect()
             .add(patternPin + ',cmd:getfollowing', user.getFollowing)
             .add(patternPin + ',cmd:getUserById', user.getUserById)
             .add(patternPin + ',cmd:count,entity:follower,by:userId', user.getFollowersCountByUserId)
-            .add(patternPin + ',cmd:fbLogin', user.fbLogin),
+            .add(patternPin + ',cmd:fbLogin', user.fbLogin)
             .add(patternPin + ',cmd:unfollow',user.unFollow)
             //.act({
             //    role: 'user',
