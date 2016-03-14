@@ -41,17 +41,16 @@ database.connect()
             .add(patternPin + ',cmd:count,entity:follower,by:userId', user.getFollowersCountByUserId)
             .add(patternPin + ',cmd:fbLogin', user.fbLogin)
             .add(patternPin + ',cmd:unfollow',user.unFollow)
-            //.act({
-            //    role: 'user',
-            //    cmd: 'fbLogin',
-            //    data: {
-            //        id: '1420825108994320',
-            //        email: 'some@email.com',
-            //        name: 'some name'
-            //    }
-            //}, (err, data) => {
-            //    console.log('follow resp:', err || data);
-            //})
+            /*.act({
+                role: 'user',
+                cmd: 'get',
+                entity: 'pushToken',
+                data: {
+                    user_ids: ['569e4a83a6e5bb503b838306', '56df59dc8c151b9053a5f73f']
+                }
+            }, (err, data) => {
+                console.log('follow resp:', err || data);
+            })*/
             //.listen({type: transportMethod, pin: patternPin});
             .listen({type: 'tcp', port: 7002, pin: patternPin})
             .wrap(patternPin, util.reporter.report);
