@@ -5,7 +5,7 @@ const pwd = path.join(__dirname, '..', '/.env');
 require('dotenv').config({path: pwd});
 
 
-const util = require('ms-utilities');
+//const util = require('ms-utilities');
 const seneca = require('seneca')();
 const user = require('./lib/user');
 const device = require('./lib/device');
@@ -22,7 +22,7 @@ database.connect()
         seneca
         //.use(transportMethod + '-transport')
 
-            .client({type: 'tcp', port: 7010, host: 'localhost', pin: 'role:reporter'})
+            //.client({type: 'tcp', port: 7010, host: 'localhost', pin: 'role:reporter'})
 
             .add(patternPin + ',cmd:register,entity:device', device.registerDevice)
             .add(patternPin + ',cmd:unregister,entity:device', device.unregisterDevice)
@@ -53,5 +53,5 @@ database.connect()
             //})
             //.listen({type: transportMethod, pin: patternPin});
             .listen({type: 'tcp', port: 7002, pin: patternPin})
-            .wrap(patternPin, util.reporter.report);
+            //.wrap(patternPin, util.reporter.report);
     });
