@@ -13,15 +13,15 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^0.8.5",
-    "dotenv": "^1.2.0",
-    "joi": "^7.1.0",
+    "dotenv": "^2.0.0",
+    "joi": "^8.0.4",
     "mongodb": "^2.1.1",
-    "ms-utilities": "^2.3.5",
-    "seneca": "^0.9.3",
-    "seneca-rabbitmq-transport": "^0.2.1"
+    "ms-utilities": "^3.0.0",
+    "seneca": "^1.4.0",
+    "seneca-rabbitmq-transport": "^0.3.1"
   },
   "devDependencies": {
-    "ava": "^0.7.0",
+    "ava": "^0.13.0",
     "jshint": "^2.9.1",
     "precommit-hook": "^3.0.0",
     "proxyquire": "^1.7.3"
