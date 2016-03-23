@@ -15,7 +15,7 @@
     "bcrypt": "^0.8.5",
     "dotenv": "^1.2.0",
     "joi": "^7.1.0",
-    "mongodb": "^2.1.1",
+    "mongodb": "^2.1.11",
     "ms-utilities": "^2.3.5",
     "seneca": "^0.9.3",
     "seneca-rabbitmq-transport": "^0.2.1"
