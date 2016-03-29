@@ -52,6 +52,7 @@ database.connect()
                 console.log('follow resp:', err || data);
             })*/
             //.listen({type: transportMethod, pin: patternPin});
-            .listen({type: 'tcp', port: 7002, pin: patternPin});
+            //.listen({type: 'tcp', port: 7002, pin: patternPin});
+            .use('mesh',{auto:true, pin:patternPin});
             //.wrap(patternPin, util.reporter.report);
     });
