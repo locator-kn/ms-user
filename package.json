@@ -15,7 +15,7 @@
     "bcrypt": "^0.8.5",
     "dotenv": "^1.2.0",
     "joi": "^7.1.0",
-    "mongodb": "^2.1.1",
+    "mongodb": "^2.1.14",
     "ms-utilities": "^2.3.5",
     "seneca": "^1.4.0",
     "seneca-balance-client": "^0.4.0",
