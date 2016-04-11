@@ -9,6 +9,10 @@
     "gendocs": "./generate_docs.sh",
     "jshint": "jshint --exclude ./node_modules ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locator-kn/ms-user.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
