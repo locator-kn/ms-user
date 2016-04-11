@@ -37,7 +37,9 @@ database.connect()
             .add(patternPin + ',cmd:follow', user.follow)
             .add(patternPin + ',cmd:getfollowers', user.getFollowers)
             .add(patternPin + ',cmd:getfollowing', user.getFollowing)
-            .add(patternPin + ',cmd:getUserById', user.getUserById)
+            .add(patternPin + ',cmd:getUser,by:id', user.getUserById)
+            .add(patternPin + ',cmd:getUserById', user.getUserByIdDeprecated)
+            .add(patternPin + ',cmd:getUser,by:mail', user.getUserByMail)
             .add(patternPin + ',cmd:count,entity:follower,by:userId', user.getFollowersCountByUserId)
             .add(patternPin + ',cmd:fbLogin', user.fbLogin)
             .add(patternPin + ',cmd:unfollow',user.unFollow)
@@ -52,6 +54,7 @@ database.connect()
                 console.log('follow resp:', err || data);
             })*/
             //.listen({type: transportMethod, pin: patternPin});
-            .listen({type: 'tcp', port: 7002, pin: patternPin});
+            //.listen({type: 'tcp', port: 7002, pin: patternPin});
+            .use('mesh',{auto:true, pin:patternPin});
             //.wrap(patternPin, util.reporter.report);
     });
