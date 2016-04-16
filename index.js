@@ -29,7 +29,6 @@ database.connect()
             .add(patternPin + ',cmd:unregister,entity:device', device.unregisterDevice)
             .add(patternPin + ',cmd:register,entity:user', user.register)
             .add(patternPin + ',cmd:get,entity:pushToken', device.getPushToken)
-            .add(patternPin + ',cmd:get,entity:device', device.getDevice)
 
             .add(patternPin + ',cmd:add,entity:image', user.addImageToUser)
 
