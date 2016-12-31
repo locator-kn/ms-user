@@ -16,7 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^0.8.6",
+    "bcrypt": "^1.0.2",
     "dotenv": "^2.0.0",
     "joi": "^8.0.5",
     "mongodb": "^2.1.16",
