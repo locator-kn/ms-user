@@ -18,7 +18,7 @@
   "dependencies": {
     "bcrypt": "^0.8.6",
     "dotenv": "^2.0.0",
-    "joi": "^8.0.5",
+    "joi": "^10.4.0",
     "mongodb": "^2.1.16",
     "ms-utilities": "^4.0.0",
     "seneca": "^2.0.1",
